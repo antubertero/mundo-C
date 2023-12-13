@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1702466508 source:c:\users\administrator\desktop\antu - documentos\practica\practicafinallab2\listassimples.c
+	<stdio.h>
+	<stdlib.h>
+	"ListasSimples.h"
+
+1702466798 c:\users\administrator\desktop\antu - documentos\practica\practicafinallab2\listassimples.h
+	"Persona.h"
+
+1702382517 source:c:\users\administrator\desktop\antu - documentos\practica\practicafinallab2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Persona.h"
+
+1702382902 source:c:\users\administrator\desktop\antu - documentos\practica\practicafinallab2\persona.c
+	<stdio.h>
+	<stdlib.h>
+	"time.h"
+	"Persona.h"
+	"string.h"
+
+1702382918 c:\users\administrator\desktop\antu - documentos\practica\practicafinallab2\persona.h
+
