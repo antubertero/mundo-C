@@ -27,6 +27,7 @@ nodoListaDoble * crearNodoDoble(stPersona persona)
 
 
 }
+
 /// agregar en lista doble
 
 nodoListaDoble * agregarEnListaDobleEnOrdenPorLegajoo(nodoListaDoble * lista, nodoListaDoble * nuevoNodo)
@@ -42,7 +43,7 @@ nodoListaDoble * agregarEnListaDobleEnOrdenPorLegajoo(nodoListaDoble * lista, no
     else
     {
 
-        if(nuevoNodo->persona.lejago<lista->persona.lejago)
+        if(nuevoNodo->persona.legajo<lista->persona.legajo)
         {
 
             lista = agregarAlPrincipioListaDoble(lista, nuevoNodo);
@@ -54,7 +55,7 @@ nodoListaDoble * agregarEnListaDobleEnOrdenPorLegajoo(nodoListaDoble * lista, no
             nodoListaDoble* seg = lista->siguiente;
             nodoListaDoble* anter = lista;
 
-            while(seg!=NULL && nuevoNodo->persona.lejago>seg->persona.lejago)
+            while(seg!=NULL && nuevoNodo->persona.legajo>seg->persona.legajo)
             {
                 anter = seg;
                 seg = seg->siguiente;
@@ -81,7 +82,6 @@ nodoListaDoble * agregarEnListaDobleEnOrdenPorLegajoo(nodoListaDoble * lista, no
 
 }
 
-
 // agregarAlPricnicpio
 
 nodoListaDoble* agregarAlPrincipioListaDoble(nodoListaDoble* lista, nodoListaDoble* nuevoNodo)
@@ -99,7 +99,164 @@ nodoListaDoble* agregarAlPrincipioListaDoble(nodoListaDoble* lista, nodoListaDob
 
 }
 
+// eliminar nodo lista
+
+nodoListaDoble * eliminarNodoListasDobles(nodoListaDoble * lista, int legajoElimanr)
+{
+
+    nodoListaDoble * seg;
+    nodoListaDoble * ante;
+
+    if(lista!=NULL)
+    {
+
+        if(lista->persona.legajo == legajoElimanr)
+        {
+
+            nodoListaDoble * aBorrar = lista;
+            lista = lista->siguiente;
+            if(lista!=NULL)
+            {
+
+                lista->anterior = NULL;
+
+            }
+            free(aBorrar);
+
+        }
+        else
+        {
+
+            seg = lista->siguiente;
+            while((seg!=NULL) && lista->persona.legajo == legajoElimanr)
+            {
+
+                ante = seg;
+                seg = seg->siguiente;
+
+            }
+
+            if(seg!=NULL)
+            {
+
+                ante->siguiente = seg->siguiente;
+                free(seg);
+
+            }
+
+        }
+
+    }
+
+    return lista;
+
+}
+
+// mostrar lista
+
+void mostrarListaDoblePersonas(nodoListaDoble * lista)
+{
+
+    nodoListaDoble * listaMostrar = lista;
+
+    if(listaMostrar != NULL)
+    {
+
+        while(listaMostrar!=NULL)
+        {
+
+            mostrarPersona(listaMostrar->persona);
+            listaMostrar = listaMostrar->siguiente;
+
+        }
+
+    }
+    else
+    {
+
+        printf("\nLA LISTA NO TIENE ELEMENTOS");
+
+    }
+
+}
+
+/// archivo
+
+// subir datos al archivo
+
+void subirListaDobleEnArchivo(nodoListaDoble * lista, char nombreArchivo[])
+{
+
+    if(lista!=NULL)
+    {
+
+        FILE * archivo = fopen(nombreArchivo, "ab");
+
+
+        if(archivo!=NULL)
+        {
+            printf("\nLISTA");
+
+            while(lista!=NULL)
+            {
+
+                fwrite(&lista->persona, sizeof(stPersona), 1, archivo);
+                lista = lista->siguiente;
+
+            }
+
+            fclose(archivo);
+
+        }
+        else
+        {
+
+            printf("\nEl archivo no se pudo abrir el archivo");
+
+        }
+
+    }
+    else
+    {
+
+        printf("La lista no tiene elementos ");
+
+    }
 
 
 
+}
 
+// descargar argar datos de un archivo y subir a la lista simple
+
+void descargarDatosArchiYSubirEnListaDoble(nodoListaDoble * lista, char nombreArchivo[])
+{
+
+    FILE* archivo = fopen(nombreArchivo, "rb");
+    stPersona persona;
+    nodoListaDoble * nuevoNodo;
+
+    if(archivo!=NULL)
+    {
+
+        while(fread(&persona, sizeof(stPersona), 1, archivo)>0)
+        {
+
+            nuevoNodo = crearNodoDoble(persona);
+            lista = agregarEnListaDobleEnOrdenPorLegajoo(lista, nuevoNodo);
+
+        }
+
+        fclose(archivo);
+
+    }
+    else
+    {
+
+        printf("\nEl archivo no se pudo abrir");
+
+    }
+
+
+
+}

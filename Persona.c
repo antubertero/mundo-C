@@ -13,7 +13,7 @@ stPersona crearPersonaAleatoria()
     stPersona nuevaPersona;
 
     nuevaPersona.edad = generarNumeroAleatorio(18, 90);
-    nuevaPersona.lejago = generarNumeroAleatorio(1000, 9999);
+    nuevaPersona.legajo = generarNumeroAleatorio(1000, 9999);
     nuevaPersona.fondosCapital = 0;
     strcpy(nuevaPersona.nombre, generarNombreAleatorio());
     strcpy(nuevaPersona.apellido, generarApellidoAleatorio());
@@ -26,7 +26,7 @@ stPersona crearPersonaAleatoria()
 void mostrarPersona(stPersona persona)
 {
 
-    printf("\nLegajo: %i\nNombre:  %s\nApellido : %s\nEdad : %i\nFonodos : %f\n", persona.lejago, persona.nombre, persona.apellido, persona.edad, persona.fondosCapital);
+    printf("\nLegajo: %i\nNombre:  %s\nApellido : %s\nEdad : %i\nFonodos : %f\n", persona.legajo, persona.nombre, persona.apellido, persona.edad, persona.fondosCapital);
 
 
 }
@@ -41,7 +41,7 @@ int generarNumeroAleatorio(int min, int max)
 char* generarNombreAleatorio()
 {
     // Lista de nombres predefinidos
-    char* nombres[] = {"Juan", "Maria", "Pedro", "Ana", "Carlos", "Laura", "David", "Sofia", "Rafael", "Antu"};
+    char* nombres[] = {"Juan", "Maria", "Pedro", "Ana", "Carlos", "Laura", "David", "Sofia", "Rafael", "Antu", "Tomas", "Alejo", "Sebastian"};
 
     // Calcula la cantidad de nombres en el array
     int cantidadNombres = sizeof(nombres) / sizeof(nombres[0]);

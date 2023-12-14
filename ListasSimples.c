@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ListasSimples.h"
+#include "Persona.h"
 
 /// LISTAS SIMPLES
 /// TODA LA DATITA
@@ -43,7 +44,7 @@ listaPersona* agregarEnListaEnOrdenPorLegajoo(listaPersona * lista, listaPersona
     else
     {
 
-        if(lista->persona.lejago>nuevoNodo->persona.lejago)
+        if(lista->persona.legajo>nuevoNodo->persona.legajo)
         {
 
             lista = agregarAlPrincipio(lista, nuevoNodo);
@@ -55,7 +56,7 @@ listaPersona* agregarEnListaEnOrdenPorLegajoo(listaPersona * lista, listaPersona
             listaPersona * seg = lista->siguiente;
 
 
-            while(seg!=NULL && seg->persona.lejago<nuevoNodo->persona.lejago)
+            while(seg!=NULL && seg->persona.legajo<nuevoNodo->persona.legajo)
             {
 
                 anterior = seg;
@@ -120,7 +121,7 @@ listaPersona* eliminarPersonaDeLista(listaPersona* lista, int legajoElimanr)
     listaPersona* aux;
     listaPersona* ante;
 
-    if((lista!=NULL) && (lista->persona.lejago == legajoElimanr))
+    if((lista!=NULL) && (lista->persona.legajo == legajoElimanr))
     {
 
         listaPersona* aux = lista;
@@ -132,7 +133,7 @@ listaPersona* eliminarPersonaDeLista(listaPersona* lista, int legajoElimanr)
     {
 
         aux=lista;
-        while((aux!=NULL)&&(legajoElimanr==lista->persona.lejago))
+        while((aux!=NULL)&&(legajoElimanr==lista->persona.legajo))
         {
 
 

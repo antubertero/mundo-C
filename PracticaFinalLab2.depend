@@ -21,3 +21,44 @@
 
 1702382918 c:\users\administrator\desktop\antu - documentos\practica\practicafinallab2\persona.h
 
+1702563812 source:c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\listassimples.c
+	<stdio.h>
+	<stdlib.h>
+	"ListasSimples.h"
+	"Persona.h"
+
+1702559204 c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\listassimples.h
+	"Persona.h"
+
+1702563683 c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\persona.h
+
+1702559204 source:c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Persona.h"
+
+1702563814 source:c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\persona.c
+	<stdio.h>
+	<stdlib.h>
+	"time.h"
+	"Persona.h"
+	"string.h"
+
+1702563843 source:c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\listadoble.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaDoble.h"
+	"Persona.h"
+
+1702561460 c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\listadoble.h
+	"Persona.h"
+
+1702563822 source:c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\arbolpersonas.c
+	<stdio.h>
+	<stdlib.h>
+	"ArbolPersonas.h"
+	"Persona.h"
+
+1702562739 c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\arbolpersonas.h
+	"Persona.h"
+
