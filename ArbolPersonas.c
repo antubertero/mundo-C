@@ -12,6 +12,7 @@ nodoArbol * initArbol()
 
 }
 
+// crear nodo persona
 
 nodoArbol * crearNodoArbolPersona(stPersona persona)
 {
@@ -27,6 +28,8 @@ nodoArbol * crearNodoArbolPersona(stPersona persona)
 
 
 }
+
+// agregar en arbol de forma recursiva
 
 nodoArbol * agregarEnArbol(nodoArbol * arbol, nodoArbol * nuevoNodo)
 {
@@ -57,3 +60,88 @@ nodoArbol * agregarEnArbol(nodoArbol * arbol, nodoArbol * nuevoNodo)
     return arbol;
 
 }
+
+// buscar nodo arbol
+
+nodoArbol * busquedaDePersonaEnArbol(nodoArbol * arbool, int legajoBuscado)
+{
+
+    nodoArbol * rta = NULL;
+
+    if(arbool->persona.legajo == legajoBuscado)
+    {
+
+        rta = arbool;
+
+    }
+    else
+    {
+
+        if(legajoBuscado>arbool->persona.legajo)
+        {
+
+            rta = busquedaDePersonaEnArbol(arbool->derecha, legajoBuscado);
+
+        }
+        else
+        {
+
+            rta = busquedaDePersonaEnArbol(arbool->izquierda, legajoBuscado);
+
+        }
+
+    }
+
+
+    return rta;
+
+
+}
+
+// mostrar arbol
+
+// pre orden
+void mostrarArbolPreOrden(nodoArbol * arbol)
+{
+
+    if(arbol!=NULL)
+    {
+
+        mostrarPersona(arbol->persona);
+        mostrarArbolPreOrden(arbol->izquierda);
+        mostrarArbolPreOrden(arbol->derecha);
+
+    }
+}
+
+// in orden
+
+void mostrarArbolInOrden(nodoArbol * arbol)
+{
+
+    if(arbol !=NULL)
+    {
+
+        mostrarArbolInOrden(arbol->izquierda);
+        mostrarPersona(arbol->persona);
+        mostrarArbolInOrden(arbol->izquierda);
+
+
+    }
+}
+
+// post orden
+
+void mostrarArbolPosOrden(nodoArbol * arbol)
+{
+
+    if(arbol!=NULL)
+    {
+
+        mostrarArbolPosOrden(arbol->izquierda);
+        mostrarArbolPosOrden(arbol->derecha);
+        mostrarPersona(arbol->persona);
+
+    }
+}
+

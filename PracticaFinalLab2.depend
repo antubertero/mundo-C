@@ -62,3 +62,35 @@
 1702562739 c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\arbolpersonas.h
 	"Persona.h"
 
+1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listadoble.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaDoble.h"
+	"Persona.h"
+
+1702590009 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listadoble.h
+	"Persona.h"
+
+1702590009 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\persona.h
+
+1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listassimples.c
+	<stdio.h>
+	<stdlib.h>
+	"ListasSimples.h"
+	"Persona.h"
+
+1702590009 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listassimples.h
+	"Persona.h"
+
+1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Persona.h"
+
+1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\persona.c
+	<stdio.h>
+	<stdlib.h>
+	"time.h"
+	"Persona.h"
+	"string.h"
+
