@@ -9,6 +9,7 @@ typedef struct
     char * apellido[10];
     int edad;
     float fondosCapital;
+    int numeroDeBanco; // 1 - Banco Provincia 2 - Banco Frances 3 - Banco Santander
 
 
 } stPersona;

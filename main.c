@@ -1,25 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "TDAarregloDeArboles.h"
 #include "Persona.h"
 
 int main()
 {
 
     srand(time(NULL));
-    stPersona persona[100];
 
-    for(int i = 0 ; i<100; i++){
-
-        persona[i]=crearPersonaAleatoria();
-
-    }
-
-    for(int i = 0 ; i<100 ; i++){
-
-        mostrarPersona(persona[i]);
-
-    }
-
+   celda adl[3];
+   int validos = ingresarPersonaEnTDA(adl, 3);
+   mostrarCeldaDeArbolesTDA(adl, 3);
 
     return 0;
 }

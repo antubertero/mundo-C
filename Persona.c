@@ -17,6 +17,7 @@ stPersona crearPersonaAleatoria()
     nuevaPersona.fondosCapital = 0;
     strcpy(nuevaPersona.nombre, generarNombreAleatorio());
     strcpy(nuevaPersona.apellido, generarApellidoAleatorio());
+    nuevaPersona.numeroDeBanco = generarNumeroAleatorio(1, 3);  // 1 - Banco Provincia 2 - Banco Frances 3 - Banco Santander
 
     return nuevaPersona;
 
@@ -26,8 +27,22 @@ stPersona crearPersonaAleatoria()
 void mostrarPersona(stPersona persona)
 {
 
-    printf("\nLegajo: %i\nNombre:  %s\nApellido : %s\nEdad : %i\nFonodos : %f\n", persona.legajo, persona.nombre, persona.apellido, persona.edad, persona.fondosCapital);
+    printf("\n\nLegajo: %i\nNombre:  %s\nApellido : %s\nEdad : %i\nFonodos : %f\nBanco asociados: ", persona.legajo, persona.nombre, persona.apellido, persona.edad, persona.fondosCapital);
+    switch(persona.numeroDeBanco)
+    {
 
+    case 1:
+        printf("Banco Provincia");
+        break;
+    case 2:
+        printf("Banco Frances");
+        break;
+    case 3:
+        printf("Banco Santander");
+        break;
+
+
+    }
 
 }
 
@@ -55,6 +70,7 @@ char* generarNombreAleatorio()
 
 char* generarApellidoAleatorio()
 {
+
     // Lista de apellidos predefinidos
     char* apellidos[] = {"Gomez", "Rodriguez", "Fernandez", "Lopez", "Garcia", "Martinez", "Perez", "Diaz", "Bertero"};
 
@@ -67,3 +83,5 @@ char* generarApellidoAleatorio()
     // Retorna el nombre correspondiente al índice aleatorio
     return apellidos[indiceAleatorio];
 }
+
+
