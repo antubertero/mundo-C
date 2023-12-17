@@ -62,32 +62,33 @@
 1702638570 c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\arbolpersonas.h
 	"Persona.h"
 
-1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listadoble.c
+1702656019 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listadoble.c
 	<stdio.h>
 	<stdlib.h>
 	"ListaDoble.h"
 	"Persona.h"
 
-1702590009 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listadoble.h
+1702656019 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listadoble.h
 	"Persona.h"
 
-1702590009 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\persona.h
+1702656019 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\persona.h
 
-1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listassimples.c
+1702656019 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listassimples.c
 	<stdio.h>
 	<stdlib.h>
 	"ListasSimples.h"
 	"Persona.h"
 
-1702590009 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listassimples.h
+1702656019 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\listassimples.h
 	"Persona.h"
 
-1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\main.c
+1702811370 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\main.c
 	<stdio.h>
 	<stdlib.h>
+	"TDAarregloDeArboles.h"
 	"Persona.h"
 
-1702590009 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\persona.c
+1702656019 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\persona.c
 	<stdio.h>
 	<stdlib.h>
 	"time.h"
@@ -110,4 +111,30 @@
 1702646840 c:\users\administrator\desktop\antu - documentos\programacion\c\practica\mundo-c\tdaarreglodearboles.h
 	"ArbolPersonas.h"
 	"Persona.h"
+
+1702656019 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\arbolpersonas.c
+	<stdio.h>
+	<stdlib.h>
+	"ArbolPersonas.h"
+	"Persona.h"
+
+1702656019 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\arbolpersonas.h
+	"Persona.h"
+
+1702656019 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\archivos.c
+	<stdio.h>
+	<stdlib.h>
+	"Archivos.h"
+	"Persona.h"
+
+1702656019 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\archivos.h
+
+1702656019 e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\tdaarreglodearboles.h
+	"ArbolPersonas.h"
+	"Persona.h"
+
+1702809813 source:e:\programacion\utn\1 a—o\programacion y laboratorio 2\practicafinallab2\mundo-c\tdaarreglodearboles.c
+	<stdio.h>
+	<stdlib.h>
+	"TDAarregloDeArboles.h"
 

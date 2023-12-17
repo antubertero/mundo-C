@@ -55,6 +55,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="TDAarregloDeArboles.h" />
+		<Unit filename="TDAlistasDeListas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="TDAlistasDeListas.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

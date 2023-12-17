@@ -7,21 +7,15 @@
 
 int ingresarPersonaEnTDA(celda arregloArbolTDA[], int dim)
 {
-
     int validos = 0;
     stPersona persona;
-    int i = 0;
-    while((i<100)&&(validos<dim))
-    {
 
+    for (int i = 0; i < 100 && validos < dim; i++) {
         persona = crearPersonaAleatoria();
-        alta(arregloArbolTDA, persona, validos);
-        i++;
+        validos = alta(arregloArbolTDA, persona, validos);
     }
 
     return validos;
-
-
 }
 
 /// alta
@@ -39,7 +33,8 @@ int alta(celda arregloArbolTDA[], stPersona persona, int validos)
         pos = validos-1;
 
     }
-    arregloArbolTDA[pos].arbol = agregarEnArbol(arregloArbolTDA[pos].arbol, aux);
+
+        arregloArbolTDA[pos].arbol = agregarEnArbol(arregloArbolTDA[pos].arbol, aux);
 
     return validos;
 
@@ -89,8 +84,30 @@ void mostrarCeldaDeArbolesTDA(celda arregloArbolTDA[], int dim)
     for(int i = 0 ; i<dim ; i++)
     {
 
-        printf("\n CELDA %i\n\n", i+1);
+    if(i != dim-1){
+
+        printf("\n\n CELDA %i\n     ", i+1);
+        switch(arregloArbolTDA[i].arbol->persona.numeroDeBanco){
+
+    case 1:
+
+        printf("Banco Provincia");
+        break;
+
+    case 2:
+        printf("Banco Frances");
+        break;
+
+    case 3:
+        printf("Banco Santander");
+        break;
+
+
+        }
         mostrarArbolInOrden(arregloArbolTDA[i].arbol);
+
+    }
+
 
 
     }

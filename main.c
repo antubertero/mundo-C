@@ -8,9 +8,13 @@ int main()
 
     srand(time(NULL));
 
-   celda adl[3];
-   int validos = ingresarPersonaEnTDA(adl, 3);
-   mostrarCeldaDeArbolesTDA(adl, 3);
+   celda adl[4];
+   int validos = ingresarPersonaEnTDA(adl, 4);
+   mostrarCeldaDeArbolesTDA(adl, 4);
+
+   /// modificcar dato en tda
+
+
 
     return 0;
 }
